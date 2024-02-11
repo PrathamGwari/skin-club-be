@@ -2,10 +2,7 @@ const mongoose = require("mongoose");
 const dotenv = require('dotenv')
 dotenv.config()
 
-console.log('env', process.env)
 const mongoURI = process.env.MONGO_URL
-// const mongoURI =
-//   "mongodb+srv://Pratham:chikapika2002@cluster0.bcyai.mongodb.net/skin-club";
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
